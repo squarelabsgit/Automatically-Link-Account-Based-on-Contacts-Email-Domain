@@ -3,7 +3,7 @@
 Initially, it is crucial to confirm the correct usage and formatting of the 'website' field in the Account record, as this field serves as our linking value. To facilitate user input and streamline the process, we plan to automate the formatting of this field. Users often copy and paste website URLs directly into the CRM, so the automation will ensure the desired format, which is 'example.com'. The function will eliminate any extraneous elements such as 'https://,' 'www.,' or additional pages and parameters from the website URL.
 
 ## Step 1:
-Create a workflow that triggers on create or update of an Account where the website field is not empty and contains '/,www,?'.
+Create a workflow that triggers on create or update of an Account where the website field is not empty and contains '/,www.,?'.
 
 Assign the below function to the workflow and configure an argument of accountId set to the Account Record ID.
 
